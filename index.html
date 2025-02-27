@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Tic-Tac-Toe</h1>
+            <select id="theme-select">
+                <option value="system">System</option>
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+            </select>
+        </header>
+        
+        <div id="status" class="status">Your turn (X)</div>
+        
+        <div class="game-board">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+
+        <button id="reset-btn">Start Over</button>
+    </div>
+    
+    <div id="confetti"></div>
+    
+    <div id="result-popup" class="popup">
+        <div class="popup-content">
+            <h2 id="result-message"></h2>
+            <button id="restart-btn">Restart</button>
+        </div>
+    </div>
+
+    <audio id="x-sound" src="https://www.myinstants.com/media/sounds/draw_x.mp3"></audio>
+    <audio id="o-sound" src="https://www.myinstants.com/media/sounds/draw_o.mp3"></audio>
+    
+    <script src="script.js"></script>
+</body>
+</html>
